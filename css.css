@@ -27,7 +27,7 @@ div#theatre #curtain-left, div#theatre #curtain-right {
     transition: all 4s ease-out;
     transform: rotate(0deg);
     background-color: #01579B;
-    background-image: linear-gradient(90deg,  transparent 10%, #37474F 25% ,transparent 65% );
+    background-image: linear-gradient(90deg,  transparent 10%, #202A2F 25% ,transparent 65% );
     background-repeat: repeat;
     box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(255,255,255, 0.5), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
     background-size: 80px;
@@ -81,9 +81,18 @@ div#theatre #curtain-left, div#theatre #curtain-right {
 	border-bottom: 5px solid white;
 	font-family: 'Tangerine', cursive;
 	font-size: 100px;
-	color:#605554;
+    color:#605554;
+    opacity: 0;
+    animation: fade-IN 700ms ease-in-out forwards;
+}
+@keyframes fade-IN{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .unveil-ribbon{
     transition: all 400ms ease-in-out;
 }
-
