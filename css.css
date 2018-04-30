@@ -61,7 +61,12 @@ div#theatre #curtain-left, div#theatre #curtain-right {
 	position:absolute;
 	display:flex;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    transition: all 1200ms ease-in-out;
+    
+}
+.unveil:hover{
+    cursor: pointer;
 }
 #btn-unveil{
 	background:rgba(244, 67, 54, 0.85);
@@ -74,5 +79,8 @@ div#theatre #curtain-left, div#theatre #curtain-right {
 	font-family: 'Tangerine', cursive;
 	font-size: 100px;
 	color:#605554;
+}
+.unveil-ribbon{
+    transition: all 400ms ease-in-out;
 }
 

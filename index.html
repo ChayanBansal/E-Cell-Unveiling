@@ -70,6 +70,16 @@
 			$('.ribbon').addClass('active');
 		}, 500);
 	});
+	function removeBanner(){
+
+		var unveil=$('.unveil');
+		unveil.css({
+		'transform': 'translateY(40%)'
+		});
+		var banner=$('.unveil-ribbon');
+		banner.css('transform','scale(0.5)');
+		
+	}
 </script>
 
 </html>
