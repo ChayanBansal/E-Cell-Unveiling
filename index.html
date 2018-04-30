@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sympreneur Inauguration</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="ribbon.css">
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="theatre">
+		<em id="curtain-left"></em>
+		<em id="curtain-right"></em>
+		<img src="http://3.bp.blogspot.com/-BnKvWVKXSFE/UdekxtbQ5uI/AAAAAAAAAPA/L77wqib5Jes/s1600/dadasaheb-phalke.jpg">
+	</div>
+	<div class="unveil">
+
+		<div id="btn-unveil"></div>
+	</div>
+
+	<div class="unveil">
+		<div class="unveil-ribbon" onclick="startAnim()">
+			<div class="ribbon">
+				<div class="medallion"></div>
+
+				<div class="ribbon-1">
+					<span class="inner">
+						<span class="fadeLeft">Welcome to</span>
+					</span>
+				</div>
+
+				<div class="ribbon-2">
+					<span class="inner">
+						<span class="fadeRight">Sympreneur</span>
+					</span>
+				</div>
+
+				<div class="ribbon-3">
+					<span class="inner">
+						<span class="fadeLeft">Symbiosis E-Cell</span>
+					</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript">
+	function startAnim() {
+		var cr = document.getElementById('curtain-left');
+		cr.style.width = "0";
+		cr.style.backgroundSize = "1px";
+		cr.style.transition = "all 3s ease-in-out";
+		cr.style.transform = "rotate(15deg)";
+		cr.style.animationFillMode = "forwards";
+
+		var cr = document.getElementById('curtain-right');
+		cr.style.width = "0";
+		cr.style.backgroundSize = "1px";
+		cr.style.transition = "all 3s ease-in-out";
+		cr.style.transform = "rotate(-15deg)";
+		cr.style.animationFillMode = "forwards";
+	}
+
+	$(document).ready(function () {
+		setTimeout(function () {
+			$('.ribbon').addClass('active');
+		}, 500);
+	});
+</script>
+
+</html>
