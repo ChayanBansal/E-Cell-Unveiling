@@ -96,3 +96,7 @@ div#theatre #curtain-left, div#theatre #curtain-right {
 .unveil-ribbon{
     transition: all 400ms ease-in-out;
 }
+.unveil-ribbon:hover{
+    transition: all 800ms;
+    transform: translate(3px,-3px);
+}
