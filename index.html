@@ -7,14 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="css/ribbon.css">
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 	<link rel="stylesheet" href="css/fireworks.css">
-	<script src="curtain/js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<script src="js/sketch.js"></script>
 	<script src="js/particle.js"></script>
-
+	<em id="suas-logo"><img src="img/suas_logo.png"></em>
 	<div id="theatre">
+		
 		<em id="curtain-left"></em>
 		<em id="curtain-right"></em>
 		<img src="img/logo.jpg" style="margin-top: 10%; height:50%" id="main-img">
@@ -73,6 +74,9 @@
 		
 		var img=$('#main-img');
 		img.css('animation','appear 4000ms forwards');
+
+		var logo_bg = document.getElementById("suas-logo");
+    	logo_bg.classList.add("after-ribbon-cut");
 	}
 
 	$(document).ready(function () {
