@@ -7,7 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/ribbon.css">
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 	<link rel="stylesheet" href="css/fireworks.css">
-	<script src="curtain/js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
 		<em id="curtain-left"></em>
 		<em id="curtain-right"></em>
 		<img src="img/logo.jpg" style="margin-top: 10%; height:50%" id="main-img">
+		<div class="timer">Going to Live Stream In: <span id="countdown">00:30</span></div>
 		<div class="pyro" id="canvas">
 			<div class="before"></div>
 			<div class="after"></div>
@@ -53,70 +55,5 @@
 	</div>
 
 </body>
-<script type="text/javascript">
-
-	function startAnim() {
-		removeBanner();
-		var cr = document.getElementById('curtain-left');
-		cr.style.width = "0";
-		cr.style.backgroundSize = "1px";
-		cr.style.transition = "all 4.5s ease-in-out";
-		cr.style.transform = "rotate(15deg)";
-		cr.style.animationFillMode = "forwards";
-
-		var cr = document.getElementById('curtain-right');
-		cr.style.width = "0";
-		cr.style.backgroundSize = "1px";
-		cr.style.transition = "all 4.5s ease-in-out";
-		cr.style.transform = "rotate(-15deg)";
-		cr.style.animationFillMode = "forwards";
-		
-		var img=$('#main-img');
-		img.css('animation','appear 4000ms forwards');
-	}
-
-	$(document).ready(function () {
-		setTimeout(function () {
-			$('.ribbon').addClass('active');
-		}, 100);
-		$("#btn-unveil").mousedown(function(){
-			$(this).css("cursor","url('img/scissors-closed.png'),auto");
-		});
-		$("#btn-unveil").mouseup(function(){
-			$(this).css("cursor","url('img/scissors-3.png'),auto");
-		});
-		$(".unveil-ribbon").mousedown(function(){
-			$(this).css("cursor","url('img/scissors-closed.png'),auto");
-		});
-		$(".unveil-ribbon").mouseup(function(){
-			$(this).css("cursor","url('img/scissors-3.png'),auto");
-		});
-	});
-
-
-	function removeBanner() {
-		var unveil = $('.unveil');
-		unveil.css({
-			'transform': 'translateY(40%)'
-		});
-		var banner = $('.unveil-ribbon');
-		banner.css('transform', 'scale(0.5)');
-		var ribbon = $('#btn-unveil');
-		ribbon.css('height', '07%');
-	}
-	function change_text_to() {
-		$('#change-text').html('Click to cut ribbon!');
-	}
-	function change_text_from() {
-		$('#change-text').html('Symbiosis E-Cell');
-	}
-
-
-
-
-
-
-
-</script>
 
 </html>
