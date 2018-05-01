@@ -15,6 +15,9 @@ function startAnim() {
     cr.style.transform = "rotate(-15deg)";
     cr.style.animationFillMode = "forwards";
 
+    var logo_bg = document.getElementById("suas-logo");
+    logo_bg.classList.add("after-ribbon-cut");
+    
     var img = $('#main-img');
     img.css('animation', 'appear 4000ms forwards');
     startCountDown();
