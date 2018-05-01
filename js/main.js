@@ -18,6 +18,10 @@
 		var img=$('#main-img');
 		img.css('animation','appear 4000ms forwards');
 		startCountDown();
+
+		var logo_bg = document.getElementById("suas-logo");
+    	logo_bg.classList.add("after-ribbon-cut");
+		
 	}
 
 	function startCountDown(){
