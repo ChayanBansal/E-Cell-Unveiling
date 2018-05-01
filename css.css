@@ -65,7 +65,7 @@ div#theatre #curtain-left, div#theatre #curtain-right {
 	display:flex;
 	justify-content: center;
     align-items: center;
-    transition: all 900ms ease-in-out;
+    transition: all 1200ms ease-in-out;
     background: transparent;
 }
 .unveil-ribbon:hover{
@@ -94,30 +94,14 @@ div#theatre #curtain-left, div#theatre #curtain-right {
     }
 }
 .unveil-ribbon{
-    transition: all 300ms ease-out;
+    transition: all 400ms ease-in-out;
     z-index: 4000;
-    position: absolute;
-}
-.unveil #btn-unveil:hover,.unveil .unveil-ribbon:hover{
-    cursor: url('../img/scissors-3.png'),auto;
 }
 .unveil-ribbon:hover{
     transform: translate3d(3px,-3px,0px);
 }
-.sketch{
-    position: absolute;
-    z-index: 1500;
-    background: transparent;
-}
-#main-img{
-    transform: scale(0.3);
-    animation-fill-mode: forwards; 
-}
-@keyframes appear{
-    from{
-        transform: scale(0.3);
+    .sketch{
+        position: absolute;
+        z-index: 1500;
+        background: transparent;
     }
-    to{
-        transform: scale(1);
-    }
-}

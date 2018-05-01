@@ -3,10 +3,10 @@
 
 <head>
 	<title>Sympreneur Inauguration</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/ribbon.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="ribbon.css">
 	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-	<link rel="stylesheet" href="css/fireworks.css">
+	<link rel="stylesheet" href="fireworks.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Resource style -->
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 	<div class="overlay" style="position: absolute; width:100%; height:100%; z-index:5000">
 			<section class="cd-section">
 					<div class="cd-block">
@@ -84,6 +85,34 @@
 					<p>
 						To witness a historic moment at SUAS...
 					</p>
+=======
+	<script src="sketch.js"></script>
+	<script src="particle.js"></script>
+
+	<div id="theatre">
+		<em id="curtain-left"></em>
+		<em id="curtain-right"></em>
+		<img src="logo.jpg" style="margin-top: 10%; height:50%">
+		<div class="pyro" id="canvas">
+			<div class="before"></div>
+			<div class="after"></div>
+		</div>
+	</div>
+	<div class="unveil">
+
+		<div id="btn-unveil"></div>
+	</div>
+
+	<div class="unveil">
+		<div class="unveil-ribbon" onclick="startAnim()" onmouseover="change_text_to()" onmouseout="change_text_from()">
+			<div class="ribbon">
+				<div class="medallion"></div>
+
+				<div class="ribbon-1">
+					<span class="inner">
+						<span class="fadeLeft">Welcome to</span>
+					</span>
+>>>>>>> parent of 14236cd... cutting scissors added and foldering done
 				</div>
 			</div>
 		</section>
@@ -118,6 +147,7 @@
 		<!-- .cd-section -->
 
 
+<<<<<<< HEAD
 		
 		<section class="cd-section">
 				<div class="cd-block">
@@ -149,6 +179,9 @@
 
 
 
+=======
+	</div>
+>>>>>>> parent of 14236cd... cutting scissors added and foldering done
 </body>
 <script type="text/javascript">
 
@@ -157,25 +190,29 @@
 		var cr = document.getElementById('curtain-left');
 		cr.style.width = "0";
 		cr.style.backgroundSize = "1px";
-		cr.style.transition = "all 4.5s ease-in-out";
+		cr.style.transition = "all 3s ease-in-out";
 		cr.style.transform = "rotate(15deg)";
 		cr.style.animationFillMode = "forwards";
 
 		var cr = document.getElementById('curtain-right');
 		cr.style.width = "0";
 		cr.style.backgroundSize = "1px";
-		cr.style.transition = "all 4.5s ease-in-out";
+		cr.style.transition = "all 3s ease-in-out";
 		cr.style.transform = "rotate(-15deg)";
 		cr.style.animationFillMode = "forwards";
+<<<<<<< HEAD
 
 		var img = $('#main-img');
 		img.css('animation', 'appear 4000ms forwards');
+=======
+>>>>>>> parent of 14236cd... cutting scissors added and foldering done
 	}
 
 	$(document).ready(function () {
 		setTimeout(function () {
 			$('.ribbon').addClass('active');
 		}, 100);
+<<<<<<< HEAD
 		$("#btn-unveil").mousedown(function () {
 			$(this).css("cursor", "url('img/scissors-closed.png'),auto");
 		});
@@ -188,9 +225,9 @@
 		$(".unveil-ribbon").mouseup(function () {
 			$(this).css("cursor", "url('img/scissors-3.png'),auto");
 		});
+=======
+>>>>>>> parent of 14236cd... cutting scissors added and foldering done
 	});
-
-
 	function removeBanner() {
 		var unveil = $('.unveil');
 		unveil.css({
