@@ -31,6 +31,7 @@ function startCountDown() {
         init--;
         if (init == 0) {
             //redirect
+            playMusic();
             window.location.href = "live_stream.html";
             clearInterval(count);
         }

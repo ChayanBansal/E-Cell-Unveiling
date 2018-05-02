@@ -68,7 +68,7 @@ demo.setup = function () {
 
     window.bubble_timer=setInterval(function () { 
         
-        for (i = 0; i < 15; i++) {
+        for (i = 0; i < random(1,100); i++) {
             x = (demo.width * 0.5) + random(-500, 500);
             y = (demo.height * 0.5) + random(-500, 500);
             demo.spawn(x, y);
