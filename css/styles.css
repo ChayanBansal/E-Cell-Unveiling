@@ -165,3 +165,11 @@ div#theatre #curtain-left, div#theatre #curtain-right {
     background: rgba(96, 125, 139,0.5) !important;
     box-shadow: 3px 7px 14px #888888 !important;
 }
+.audio{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+.audio:hover{
+    cursor: pointer;
+}

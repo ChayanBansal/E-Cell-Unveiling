@@ -21,16 +21,18 @@ function startAnim() {
     var img = $('#main-img');
     img.css('animation', 'appear 4000ms forwards');
     startCountDown();
+    clearInterval(bubble_timer);
 }
 
 function startCountDown() {
     var cdt = $('#countdown');
     var init = 30;
-    setInterval(function () {
+    count=setInterval(function () {
         init--;
         if (init == 0) {
             //redirect
             window.location.href = "live_stream.html";
+            clearInterval(count);
         }
         cdt.html("00:" + init);
     }, 1000);
@@ -71,5 +73,14 @@ function change_text_from() {
     $('#change-text').html('Symbiosis E-Cell');
 }
 
-
+var muted=false;
+function playMusic(){
+    if(muted){
+        $('#audio').animate({volume:1},1000);
+        muted=false;
+    }else{
+        muted=true;
+        $('#audio').animate({volume:0},1000);        
+    }
+}
 

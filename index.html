@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/fireworks.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
+	<style>
+		canvas{
+			z-index: 1990;
+		}
+	</style>
 </head>
 
 <body>
@@ -53,6 +58,11 @@
 		</div>
 
 		<div id="btn-unveil" onclick="startAnim()"></div>
+		<div class="audio" onclick="playMusic()">
+			<img src="img/pause.png" alt="Play/Puse" height="40">
+			<audio src="sounds/sound-1.mp3" autoplay loop id="audio">
+		</div>
+		</audio>
 	</div>
 
 </body>
